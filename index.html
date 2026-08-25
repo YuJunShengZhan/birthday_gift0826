@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-<title>予君的生日禮物🎁</title>
+<title>生日禮物猜猜看 🎁</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--pink:#ff5c8a;--pink2:#ff8fb0;--ink:#27242a;--muted:#8e8991;--card:#fff;--bg:#fff7fa}
@@ -63,7 +63,7 @@ html{font-size:16px}
 /* Birthday celebration */
 .celebrate-btn{margin-top:14px;width:100%;min-height:54px;border:0;border-radius:18px;background:linear-gradient(135deg,#ff7ca2,#ff477d);color:#fff;font-weight:900;font-size:17px;box-shadow:0 12px 28px rgba(255,71,125,.25);cursor:pointer;transition:transform .18s,filter .18s}.celebrate-btn:active{transform:scale(.97);filter:brightness(.96)}
 .birthday-overlay{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:clamp(14px,4vw,32px);background:radial-gradient(circle at 50% 45%,rgba(255,128,165,.18),rgba(14,10,30,.94) 68%);overflow:hidden}.birthday-overlay.show{display:flex;animation:birthdayFade .35s ease-out}.birthday-card{position:relative;z-index:2;width:min(92vw,560px);padding:clamp(28px,6vw,52px) clamp(18px,5vw,42px) clamp(24px,5vw,38px);border-radius:32px;text-align:center;color:#fff;background:linear-gradient(145deg,rgba(255,255,255,.2),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.35);box-shadow:0 24px 80px rgba(0,0,0,.42);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-.cake-stage{position:relative;width:220px;height:180px;margin:0 auto 18px;filter:drop-shadow(0 18px 20px rgba(0,0,0,.28));animation:cakePop .7s cubic-bezier(.2,.9,.25,1.35) both}.cake-plate{position:absolute;left:14px;right:14px;bottom:0;height:18px;border-radius:50%;background:linear-gradient(#f7e7ee,#cfd5ff);box-shadow:0 8px 12px rgba(0,0,0,.18)}.cake-layer{position:absolute;left:28px;right:28px;border-radius:22px;background:linear-gradient(135deg,#ffb0c8,#ff6d9b);border:4px solid rgba(255,255,255,.35);box-shadow:inset 0 -12px 0 rgba(167,35,80,.12)}.bottom-layer{height:66px;bottom:16px}.top-layer{left:45px;right:45px;height:52px;bottom:74px;background:linear-gradient(135deg,#ffd9a4,#ff9b7d)}.cake-cream{position:absolute;left:42px;right:42px;bottom:114px;height:24px;border-radius:50% 50% 42% 42%;background:#fff7f0;box-shadow:0 11px 0 #fff7f0,18px 15px 0 -3px #fff7f0,-18px 15px 0 -3px #fff7f0}.cake-candle{position:absolute;left:calc(50% - 8px);bottom:137px;width:16px;height:47px;border-radius:8px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ff6e9e 6px 12px);box-shadow:0 2px 8px rgba(0,0,0,.18)}.cake-flame{position:absolute;z-index:2;left:calc(50% - 12px);bottom:177px;width:24px;height:34px;border-radius:55% 45% 60% 40%;background:radial-gradient(circle at 40% 35%,#fff8b5 0 18%,#ffd34d 22% 55%,#ff8c45 56% 100%);transform:rotate(45deg);box-shadow:0 0 24px 8px rgba(255,190,64,.62);animation:flame .65s ease-in-out infinite alternate}.birthday-text{font-size:clamp(30px,7vw,48px);line-height:1.18;font-weight:1000;letter-spacing:.02em;text-shadow:0 4px 20px rgba(255,119,164,.55)}.birthday-sub{margin:14px auto 0;max-width:420px;font-size:clamp(14px,3vw,18px);line-height:1.7;color:rgba(255,255,255,.9)}.countdown{margin:18px auto 16px;font-size:13px;font-weight:800;color:#ffd97a}.close-birthday{width:min(100%,300px);min-height:50px;border:0;border-radius:16px;background:#fff;color:#d94d7d;font-size:16px;font-weight:900;cursor:pointer}.fireworks{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}.birthday-card{position:relative;z-index:2}.rocket{position:absolute;left:var(--x);bottom:-18px;width:5px;height:16px;border-radius:999px;background:linear-gradient(to top,#fff,var(--c));box-shadow:0 0 14px 4px var(--c);transform:translateX(-50%);animation:rocketShoot var(--dur) cubic-bezier(.18,.75,.38,1) forwards}.rocket:after{content:"";position:absolute;left:50%;top:100%;width:3px;height:42px;transform:translateX(-50%);background:linear-gradient(to bottom,var(--c),rgba(255,255,255,.35),transparent);filter:blur(1px);opacity:.9}.firework{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--c);left:var(--x);top:var(--y);box-shadow:0 0 10px var(--c);animation:explode 1.5s ease-out forwards}.firework:before{content:"";position:absolute;left:50%;top:50%;width:4px;height:4px;border-radius:50%;background:var(--c);box-shadow:var(--shadow);animation:trail 1.5s ease-out forwards}.firework:after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;border:2px solid var(--c);transform:translate(-50%,-50%);animation:ring 1.1s ease-out forwards}.birthday-overlay.show .firework,.birthday-overlay.show .rocket{animation-play-state:running}@keyframes birthdayFade{from{opacity:0}to{opacity:1}}@keyframes cakePop{from{opacity:0;transform:scale(.45) translateY(40px)}to{opacity:1;transform:scale(1) translateY(0)}}@keyframes flame{from{transform:rotate(43deg) scale(.94)}to{transform:rotate(48deg) scale(1.08)}}@keyframes rocketShoot{0%{transform:translate(-50%,0) scale(.8);opacity:0}8%{opacity:1}78%{opacity:1}100%{transform:translate(calc(-50% + var(--drift)),calc(-1 * var(--rise))) scale(1.05);opacity:1}}@keyframes explode{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.4);opacity:0}}@keyframes trail{0%{opacity:1}100%{opacity:0;transform:scale(1.05)}}@keyframes ring{0%{opacity:1;width:8px;height:8px}100%{opacity:0;width:110px;height:110px}}
+.cake-stage{position:relative;width:220px;height:180px;margin:0 auto 18px;filter:drop-shadow(0 18px 20px rgba(0,0,0,.28));animation:cakePop .7s cubic-bezier(.2,.9,.25,1.35) both}.cake-plate{position:absolute;left:14px;right:14px;bottom:0;height:18px;border-radius:50%;background:linear-gradient(#f7e7ee,#cfd5ff);box-shadow:0 8px 12px rgba(0,0,0,.18)}.cake-layer{position:absolute;left:28px;right:28px;border-radius:22px;background:linear-gradient(135deg,#ffb0c8,#ff6d9b);border:4px solid rgba(255,255,255,.35);box-shadow:inset 0 -12px 0 rgba(167,35,80,.12)}.bottom-layer{height:66px;bottom:16px}.top-layer{left:45px;right:45px;height:52px;bottom:74px;background:linear-gradient(135deg,#ffd9a4,#ff9b7d)}.cake-cream{position:absolute;left:42px;right:42px;bottom:114px;height:24px;border-radius:50% 50% 42% 42%;background:#fff7f0;box-shadow:0 11px 0 #fff7f0,18px 15px 0 -3px #fff7f0,-18px 15px 0 -3px #fff7f0}.cake-candle{position:absolute;left:calc(50% - 8px);bottom:137px;width:16px;height:47px;border-radius:8px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ff6e9e 6px 12px);box-shadow:0 2px 8px rgba(0,0,0,.18)}.cake-flame{position:absolute;z-index:2;left:calc(50% - 12px);bottom:177px;width:24px;height:34px;border-radius:55% 45% 60% 40%;background:radial-gradient(circle at 40% 35%,#fff8b5 0 18%,#ffd34d 22% 55%,#ff8c45 56% 100%);transform:rotate(45deg);box-shadow:0 0 24px 8px rgba(255,190,64,.62);animation:flame .65s ease-in-out infinite alternate}.birthday-text{font-size:clamp(30px,7vw,48px);line-height:1.18;font-weight:1000;letter-spacing:.02em;text-shadow:0 4px 20px rgba(255,119,164,.55)}.birthday-sub{margin:14px auto 0;max-width:420px;font-size:clamp(14px,3vw,18px);line-height:1.7;color:rgba(255,255,255,.9)}.countdown{margin:18px auto 16px;font-size:13px;font-weight:800;color:#ffd97a}.close-birthday{width:min(100%,300px);min-height:50px;border:0;border-radius:16px;background:#fff;color:#d94d7d;font-size:16px;font-weight:900;cursor:pointer}.fireworks{position:absolute;inset:0;pointer-events:none;overflow:visible;z-index:20}.birthday-card{position:relative;z-index:2}.rocket{position:absolute;left:var(--x);bottom:-18px;width:5px;height:16px;border-radius:999px;background:linear-gradient(to top,#fff,var(--c));box-shadow:0 0 14px 4px var(--c);transform:translateX(-50%);animation:rocketShoot var(--dur) cubic-bezier(.18,.75,.38,1) forwards}.rocket:after{content:"";position:absolute;left:50%;top:100%;width:3px;height:42px;transform:translateX(-50%);background:linear-gradient(to bottom,var(--c),rgba(255,255,255,.35),transparent);filter:blur(1px);opacity:.9}.firework{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--c);left:var(--x);top:var(--y);box-shadow:0 0 10px var(--c);animation:explode 1.5s ease-out forwards}.firework:before{content:"";position:absolute;left:50%;top:50%;width:4px;height:4px;border-radius:50%;background:var(--c);box-shadow:var(--shadow);animation:trail 1.5s ease-out forwards}.firework:after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;border:2px solid var(--c);transform:translate(-50%,-50%);animation:ring 1.1s ease-out forwards}.birthday-overlay.show .firework,.birthday-overlay.show .rocket{animation-play-state:running}@keyframes birthdayFade{from{opacity:0}to{opacity:1}}@keyframes cakePop{from{opacity:0;transform:scale(.45) translateY(40px)}to{opacity:1;transform:scale(1) translateY(0)}}@keyframes flame{from{transform:rotate(43deg) scale(.94)}to{transform:rotate(48deg) scale(1.08)}}@keyframes rocketShoot{0%{transform:translate(-50%,0) scale(.8);opacity:0}8%{opacity:1}78%{opacity:1}100%{transform:translate(calc(-50% + var(--drift)),calc(-1 * var(--rise))) scale(1.05);opacity:1}}@keyframes explode{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.4);opacity:0}}@keyframes trail{0%{opacity:1}100%{opacity:0;transform:scale(1.05)}}@keyframes ring{0%{opacity:1;width:8px;height:8px}100%{opacity:0;width:110px;height:110px}}
 @media (max-width:420px){.birthday-card{border-radius:26px}.cake-stage{transform:scale(.9);margin-top:-8px;margin-bottom:8px}.birthday-text{font-size:30px}.birthday-sub{font-size:14px}}
 
 </style>
@@ -89,7 +89,7 @@ html{font-size:16px}
 <div class="overlay" id="overlay">
   <div class="success">
     <div class="confetti" id="confetti"></div><div class="burst" id="burst"></div>
-    <h2>🎉 答對了！</h2><p>猜中生日禮物了</p><div class="answer">手機殼</div>
+    <h2>🎉 答對了！</h2><p>猜中神秘禮物了</p><div class="answer">手機殼</div>
     <div class="reveal-area"><div class="case-glow"></div><img class="case-reveal" id="caseImg" alt="猜中的生日禮物手機殼"></div>
     <button class="celebrate-btn" id="celebrateBtn" type="button">🎂 點我領取生日祝福</button>
     <button class="again" id="again" type="button">再猜一次</button>
@@ -209,27 +209,74 @@ html{font-size:16px}
     fireworks.appendChild(el);
     setTimeout(()=>el.remove(),1600);
   }
-  // Web Audio 煙火音效：不需要另外下載音檔，手機與電腦都能直接播放。
-  let audioCtx=null, lastFireworkSound=0;
-  function playFireworkSound(){
+  // Web Audio：用濾波雜訊、低頻衝擊與短暫高頻「咻」聲模擬較自然的煙火。
+  let audioCtx=null, lastLaunchSound=0;
+  function ensureAudio(){
+    audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
+    if(audioCtx.state==='suspended') audioCtx.resume();
+    return audioCtx;
+  }
+  function makeNoiseBuffer(ctx,seconds){
+    const buffer=ctx.createBuffer(1,Math.floor(ctx.sampleRate*seconds),ctx.sampleRate);
+    const data=buffer.getChannelData(0);
+    let last=0;
+    for(let i=0;i<data.length;i++){
+      const white=Math.random()*2-1;
+      last=last*.985+white*.15;
+      data[i]=last;
+    }
+    return buffer;
+  }
+  function playLaunchSound(){
     const now=Date.now();
-    if(now-lastFireworkSound<140) return;
-    lastFireworkSound=now;
+    if(now-lastLaunchSound<85) return;
+    lastLaunchSound=now;
     try{
-      audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
-      if(audioCtx.state==='suspended') audioCtx.resume();
-      const t=audioCtx.currentTime;
-      const master=audioCtx.createGain(); master.gain.setValueAtTime(.0001,t); master.gain.exponentialRampToValueAtTime(.09,t+.015); master.gain.exponentialRampToValueAtTime(.0001,t+.28); master.connect(audioCtx.destination);
-      const whoosh=audioCtx.createOscillator(); const wg=audioCtx.createGain();
-      whoosh.type='sawtooth'; whoosh.frequency.setValueAtTime(180,t); whoosh.frequency.exponentialRampToValueAtTime(900,t+.11);
-      wg.gain.setValueAtTime(.0001,t); wg.gain.exponentialRampToValueAtTime(.38,t+.025); wg.gain.exponentialRampToValueAtTime(.0001,t+.16);
-      whoosh.connect(wg); wg.connect(master); whoosh.start(t); whoosh.stop(t+.17);
-      setTimeout(()=>{
-        const bt=audioCtx.currentTime, boom=audioCtx.createOscillator(), bg=audioCtx.createGain();
-        boom.type='triangle'; boom.frequency.setValueAtTime(95,bt); boom.frequency.exponentialRampToValueAtTime(38,bt+.22);
-        bg.gain.setValueAtTime(.0001,bt); bg.gain.exponentialRampToValueAtTime(.5,bt+.02); bg.gain.exponentialRampToValueAtTime(.0001,bt+.34);
-        boom.connect(bg); bg.connect(master); boom.start(bt); boom.stop(bt+.35);
-      },120);
+      const ctx=ensureAudio(), t=ctx.currentTime;
+      const master=ctx.createGain();
+      master.gain.setValueAtTime(.0001,t);
+      master.gain.exponentialRampToValueAtTime(.055,t+.012);
+      master.gain.exponentialRampToValueAtTime(.0001,t+.24);
+      master.connect(ctx.destination);
+
+      const src=ctx.createBufferSource();
+      src.buffer=makeNoiseBuffer(ctx,.26);
+      const filter=ctx.createBiquadFilter();
+      filter.type='bandpass';
+      filter.Q.value=1.2;
+      filter.frequency.setValueAtTime(450,t);
+      filter.frequency.exponentialRampToValueAtTime(2200,t+.19);
+      src.connect(filter); filter.connect(master);
+      src.start(t); src.stop(t+.26);
+    }catch(e){}
+  }
+  function playExplosionSound(){
+    try{
+      const ctx=ensureAudio(), t=ctx.currentTime;
+      const out=ctx.createGain();
+      out.gain.setValueAtTime(.0001,t);
+      out.gain.exponentialRampToValueAtTime(.11,t+.008);
+      out.gain.exponentialRampToValueAtTime(.0001,t+.65);
+      out.connect(ctx.destination);
+
+      const noise=ctx.createBufferSource();
+      noise.buffer=makeNoiseBuffer(ctx,.72);
+      const low=ctx.createBiquadFilter();
+      low.type='lowpass';
+      low.frequency.setValueAtTime(420,t);
+      low.frequency.exponentialRampToValueAtTime(110,t+.55);
+      noise.connect(low); low.connect(out);
+      noise.start(t); noise.stop(t+.72);
+
+      const boom=ctx.createOscillator(), boomGain=ctx.createGain();
+      boom.type='sine';
+      boom.frequency.setValueAtTime(82+Math.random()*20,t);
+      boom.frequency.exponentialRampToValueAtTime(34,t+.38);
+      boomGain.gain.setValueAtTime(.0001,t);
+      boomGain.gain.exponentialRampToValueAtTime(.12,t+.015);
+      boomGain.gain.exponentialRampToValueAtTime(.0001,t+.45);
+      boom.connect(boomGain); boomGain.connect(out);
+      boom.start(t); boom.stop(t+.46);
     }catch(e){}
   }
 
@@ -245,10 +292,11 @@ html{font-size:16px}
     rocket.style.setProperty('--rise',(48+Math.random()*40)+'vh');
     rocket.style.setProperty('--drift',(-60+Math.random()*120)+'px');
     fireworks.appendChild(rocket);
-    playFireworkSound();
+    playLaunchSound();
     const duration=520+Math.random()*380;
     setTimeout(()=>{
       burstFirework(x,y,color);
+      playExplosionSound();
       rocket.remove();
     },duration);
   }
