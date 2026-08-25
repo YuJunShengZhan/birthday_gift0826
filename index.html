@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-<title>生日禮物猜猜看 🎁</title>
+<title>予君的生日禮物🎁</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--pink:#ff5c8a;--pink2:#ff8fb0;--ink:#27242a;--muted:#8e8991;--card:#fff;--bg:#fff7fa}
@@ -78,7 +78,7 @@ html{font-size:16px}
   <main class="card">
     <div class="label">輸入你的答案</div>
     <div class="answer-input-wrap">
-      <input class="answer-input" id="answerInput" inputmode="text" enterkeyhint="done" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="3" placeholder="直接輸入三個字" aria-label="輸入三個字的答案">
+      <input class="answer-input" id="answerInput" inputmode="text" enterkeyhint="done" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="3" placeholder="請輸入完整的三個字答案再送出喔！" aria-label="輸入三個字的答案">
     </div>
     <button class="submit" id="submit" type="button">送出答案 ✨</button>
     <div class="message" id="message"></div>
@@ -89,10 +89,10 @@ html{font-size:16px}
 <div class="overlay" id="overlay">
   <div class="success">
     <div class="confetti" id="confetti"></div><div class="burst" id="burst"></div>
-    <h2>🎉 答對了！</h2><p>猜中神秘禮物了</p><div class="answer">手機殼</div>
+    <h2>🎉 答對了！</h2><p>猜中生日禮物了</p><div class="answer">手機殼</div>
     <div class="reveal-area"><div class="case-glow"></div><img class="case-reveal" id="caseImg" alt="猜中的生日禮物手機殼"></div>
     <button class="celebrate-btn" id="celebrateBtn" type="button">🎂 點我領取生日祝福</button>
-    <button class="again" id="again" type="button">再猜一次</button>
+    <button class="again" id="again" type="button">關閉</button>
   </div>
 </div>
 
